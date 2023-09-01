@@ -1,0 +1,74 @@
+{
+  "motor1": {
+    "setpoint1": {
+      "p": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.5
+      },
+      "i": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.2
+      },
+      "d": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.1
+      }
+    },
+    "setpoint2": {
+      "p": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.8
+      },
+      "i": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.3
+      },
+      "d": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.2
+      }
+    }
+  },
+  "motor2": {
+    "setpoint1": {
+      "p": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.6
+      },
+      "i": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.4
+      },
+      "d": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.2
+      }
+    },
+    "setpoint2": {
+      "p": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.9
+      },
+      "i": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.5
+      },
+      "d": {
+        "min": 0,
+        "max": 1,
+        "initial": 0.3
+      }
+    }
+  }
+}

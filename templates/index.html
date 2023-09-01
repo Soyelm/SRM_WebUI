@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>SRM-WebUI</title>
+      <style>
+        #waveform {
+          position: relative;
+          top: 10px;
+          left: 350px;
+          background-color: #f8e9e9;
+          width: 60%;
+          height: 60%;
+          /* center */
+          margin: 0 auto;
+          /* top | right | bottom | left */
+          padding: 10px 10px 10px 10px;
+          border: 1px solid #000000;
+        }
+        #scrollRange {
+          position: absolute;
+          top: calc(95%); /* 调整距离canvas底部的间距 */
+          left: calc(50% + 50px);
+          width: calc(40% + 25px); /* 调整滑动条的长度 */
+          height: 20px;
+          background-color: #000000;
+        }
+        #stopButton {
+          position: absolute;
+          top: 30px;
+          left: 50px;
+        }
+        #sliders {
+          position: relative;
+          top: 30px;
+          left: 50px;
+        }
+        #motors-container {
+          display: flex;
+          width: 40%;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+
+        #motor {
+          width: 50%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      </style>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://unpkg.com/wavesurfer.js@7"></script>
+  </head>
+  <body>
+    <p>SRM-WebUI</p>
+
+    <div>
+      <canvas id="waveform"></canvas>
+      <input type="range" id="scrollRange" min="0" max="100">
+    </div>
+
+    <div id="motors-container"></div>
+
+    <script src="../static/app.js"></script>
+
+  </body>
+</html>
